@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body style="background-color:pink;">
+<center>
+<form action="login" method="POST">
+  {% csrf_token %}
+  <input type="text" name="username" placeholder="username"><br>
+  <br>
+  <input type="text" name="password" placeholder="password"><br>
+  <br>
+  <input type="submit">
+</form>
+</body>
+</center>
+</html>
